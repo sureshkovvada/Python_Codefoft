@@ -6,7 +6,6 @@ def generate_password(length, use_upper=True, use_lower=True, use_digits=True, u
     similar_chars = 'il1Lo0O'
     ambiguous_chars = '{}[]()/\\\'"`~,;:.<>'
 
-    # Build the character pool
     char_pool = ''
     if use_upper:
         char_pool += string.ascii_uppercase
@@ -26,7 +25,6 @@ def generate_password(length, use_upper=True, use_lower=True, use_digits=True, u
     if not char_pool:
         return "❌ Error: No valid characters left to generate a password!"
 
-    # Ensure password uses allowed characters
     password = ''.join(random.choice(char_pool) for _ in range(length))
     return password
 
@@ -38,7 +36,6 @@ def get_strength(length):
     else:
         return "Strong 🟢"
 
-# --- User Interaction ---
 print("🔐 Creative Password Generator")
 try:
     length = int(input("🔢 Enter desired password length: "))
