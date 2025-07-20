@@ -1,5 +1,3 @@
-# 📝 Simple To-Do List Program with Status Tracking
-
 todo_list = []
 
 def show_menu():
@@ -76,5 +74,4 @@ def run_todo_list():
         else:
             print("❗ Invalid choice. Please try again.")
 
-# Start the To-Do List
 run_todo_list()
