@@ -70,7 +70,6 @@ def play_game():
             break
         round_number += 1
 
-# Main loop to allow replaying the full game
 def main():
     while True:
         play_game()
